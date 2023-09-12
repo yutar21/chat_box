@@ -9,8 +9,8 @@ class RoomType {
 
   static List<RoomType> getTypesList() {
     return [
-      RoomType(icon: EvaIcons.peopleOutline, title: "Công khai"),
-      RoomType(icon: EvaIcons.lockOutline, title: "Riêng tư"),
+      RoomType(icon: EvaIcons.peopleOutline, title: "Public"),
+      RoomType(icon: EvaIcons.lockOutline, title: "Private"),
     ];
   }
 
@@ -22,7 +22,7 @@ class RoomType {
       case "Private":
         return types[1];
       default:
-        return RoomType(icon: EvaIcons.peopleOutline, title: "Công khai");
+        return RoomType(icon: EvaIcons.peopleOutline, title: "Public");
     }
   }
 }

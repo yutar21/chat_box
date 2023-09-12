@@ -28,8 +28,7 @@ class FirebaseAuthRemoteDataSourceImpl implements FirebaseAuthRemoteDataSource {
     } on TimeoutException catch (e) {
       throw FirebaseAuthTimeoutException("Thao tác này đã hết thời gian");
     } on IOException catch (e) {
-      throw FirebaseAuthRemoteDataSourceException(
-          "Check Your Internet Connection");
+      throw FirebaseAuthRemoteDataSourceException("Kiểm tra internet");
     } catch (e) {
       throw FirebaseAuthRemoteDataSourceException(e.toString());
     }

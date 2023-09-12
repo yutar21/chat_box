@@ -115,7 +115,7 @@ abstract class BaseState<T extends StatefulWidget, VM extends BaseViewModel>
       progressIndicatorBackground: Colors.transparent,
       animationDuration: const Duration(milliseconds: 500),
       description: const Text(
-        "ID Coped Successfully",
+        "Đã sao chép ID thành công",
         style: TextStyle(color: MyTheme.white),
       ),
     ).show(context);
