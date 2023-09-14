@@ -9,8 +9,9 @@ import '../HomeViewModel.dart';
 
 class BrowseRoomsTab extends StatefulWidget {
   Stream<QuerySnapshot<RoomDTO>> rooms;
+  Stream<QuerySnapshot<RoomDTO>> allrooms;
   Function navigate;
-  BrowseRoomsTab(this.rooms, this.navigate);
+  BrowseRoomsTab(this.rooms, this.navigate, this.allrooms);
 
   @override
   State<BrowseRoomsTab> createState() => _BrowseRoomsTabState();

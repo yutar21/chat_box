@@ -125,8 +125,10 @@ class _HomeScreenState extends BaseState<HomeScreen, HomeViewModel>
                         viewModel!.getUserRooms(), viewModel!.goToChatScreen)
                   ]),
                   Column(children: [
-                    BrowseRoomsTab(viewModel!.getPublicRooms(),
-                        viewModel!.goToJoinRoomScreen)
+                    BrowseRoomsTab(
+                        viewModel!.getPublicRooms(),
+                        viewModel!.goToJoinRoomScreen,
+                        viewModel!.getUserRooms())
                   ]),
                 ],
               ),
