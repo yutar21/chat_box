@@ -18,8 +18,6 @@ import 'package:chat/Presentation/view/JoinRoom/JoinRoomView.dart';
 import 'package:chat/Presentation/view/Login/LoginView.dart';
 import 'package:chat/Presentation/view/Search/SearchView.dart';
 import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
-import 'package:elegant_notification/elegant_notification.dart';
-import 'package:elegant_notification/resources/arrays.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:floating_action_bubble_custom/floating_action_bubble_custom.dart';
 import 'package:flutter/material.dart';
@@ -144,7 +142,7 @@ class _HomeScreenState extends BaseState<HomeScreen, HomeViewModel>
                                   .copyWith(color: MyTheme.white),
                               iconColor: MyTheme.white,
                               bubbleColor: MyTheme.blue,
-                              icon: EvaIcons.messageCircle,
+                              icon: EvaIcons.messageCircleOutline,
                               onPressed: value.goToCreateRoomScreen),
                           BubbleMenu(
                               title: "Tham gia",
@@ -154,7 +152,7 @@ class _HomeScreenState extends BaseState<HomeScreen, HomeViewModel>
                                   .copyWith(color: MyTheme.white),
                               iconColor: MyTheme.white,
                               bubbleColor: MyTheme.blue,
-                              icon: EvaIcons.messageCircle,
+                              icon: EvaIcons.messageCircleOutline,
                               onPressed: () {
                                 viewModel!.showMyModalBottomSheet();
                               }),
