@@ -72,7 +72,8 @@ class _LoginScreenState extends BaseState<LoginScreen, LoginViewModel>
                     Container(
                         padding: const EdgeInsets.all(20),
                         child: InkWell(
-                            onTap: value.loginWithGoogle,
+                            onTap: () {},
+                            //value.loginWithGoogle,
                             child: Container(
                               padding: const EdgeInsets.all(20),
                               decoration: BoxDecoration(

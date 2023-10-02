@@ -57,7 +57,8 @@ class LoginViewModel extends BaseViewModel<LoginNavigator> {
         navigator!.removeContext();
         if (e is FirebaseAuthRemoteDataSourceException) {
           navigator!.showFailMessage(
-              message: e.errorMessage, posActionTitle: "Thử lại");
+              message: "Tài khoản hoặc mật khẩu không chính xác!",
+              posActionTitle: "Thử lại");
         } else if (e is FirebaseAuthTimeoutException) {
           navigator!.showFailMessage(
               message: e.errorMessage, posActionTitle: "Thử lại");

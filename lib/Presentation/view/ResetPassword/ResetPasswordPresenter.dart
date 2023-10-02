@@ -33,10 +33,10 @@ class ResetPasswordViewModel extends BaseViewModel<ResetPasswordNavigator> {
       navigator!.removeContext();
       if (e is FirebaseAuthRemoteDataSourceException) {
         navigator!.showFailMessage(
-            message: e.errorMessage, posActionTitle: "thử lại");
+            message: "Email không chính xác!", posActionTitle: "thử lại");
       } else if (e is FirebaseAuthTimeoutException) {
         navigator!.showFailMessage(
-            message: e.errorMessage, posActionTitle: "thử lại");
+            message: "Email không chính xác!", posActionTitle: "thử lại");
       } else {
         navigator!
             .showFailMessage(message: e.toString(), posActionTitle: "thử lại");

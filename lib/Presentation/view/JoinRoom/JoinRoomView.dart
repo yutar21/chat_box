@@ -103,7 +103,7 @@ class _JoinRoomScreenState extends BaseState<JoinRoomScreen, JoinRoomViewModel>
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 20, vertical: 10),
                               child: Text(
-                                "Join",
+                                "Vào nhóm",
                                 style: Theme.of(context)
                                     .textTheme
                                     .displayLarge!

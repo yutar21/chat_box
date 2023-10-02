@@ -41,14 +41,6 @@ class HomeViewModel extends BaseViewModel<HomeNavigator> {
     navigator!.goToCreateRoomScreen();
   }
 
-  void onSignOutPress() async {
-    navigator!.showQuestionMessage(
-        message: "Bạn có chắc chắn muốn đăng xuất không?",
-        posActionTitle: "Ok",
-        posAction: signOut,
-        negativeActionTitle: "Huỷ");
-  }
-
   void onCopyIdPress() {
     navigator!.showNotification();
   }
@@ -63,6 +55,14 @@ class HomeViewModel extends BaseViewModel<HomeNavigator> {
 
   void showMyModalBottomSheet() {
     navigator!.showMyModalBottomSheet(idController: idController);
+  }
+
+  void onSignOutPress() async {
+    navigator!.showQuestionMessage(
+        message: "Bạn có chắc chắn muốn đăng xuất không?",
+        posActionTitle: "Ok",
+        posAction: signOut,
+        negativeActionTitle: "Huỷ");
   }
 
   void signOut() async {
